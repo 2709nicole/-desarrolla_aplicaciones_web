@@ -36,10 +36,10 @@
                 Opciones
               </a>
               <div class="dropdown-menu">
-                <a class="dropdown-item" href="#">Inicio</a>
+                <a class="dropdown-item" href="index.html">Inicio</a>
                 <a class="dropdown-item" href="registarDatos.html">Registrar</a>
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="#">Consultar</a>
+                <a class="dropdown-item" href="consultarDatos.php">Consultar</a>
               </div>
             </li>
           </ul>
@@ -76,7 +76,7 @@
                             <td><?php echo $row["domicilio"]; ?></td>
                             <td><?php echo $row["fecha_nacimiento"]; ?></td>
                             <td>
-                                <a href="" class="btn btn-primary">Editar</a>
+                                <a href="actualizarRegistro.php?id=<?php echo $row["id"]; ?>" class="btn btn-primary">Editar</a>
                                 <a href="eliminarDatos.php?id=<?php echo $row["id"]; ?>" class="btn btn-danger">Eliminar</a>
                             </td>
                         </tr>
